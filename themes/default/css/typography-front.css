@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'GeosansLightRegular';
+    src: url('../font/geosanslight-webfont.eot');
+    src: url('../font/geosanslight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/geosanslight-webfont.woff') format('woff'),
+         url('../font/geosanslight-webfont.ttf') format('truetype'),
+         url('../font/geosanslight-webfont.svg#GeosansLightRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:700,700italic);
+.droid_italic{
+  font-family: 'Droid Serif',serif,Georgia,Helvetica,Arial,sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: larger;
+}
+
+body {
+  /*background: #f6f6f6;*/
+  background: #000;
+  color: #fff;
+  font-family: 'GeosansLightRegular', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6{
+  /*color: #444;*/
+  color: #fff;
+  font-weight:bold;
+  text-shadow: 0px 1px 0px #ccc;
+}
+  h1 {
+    font-size: 32px;
+    padding-bottom: 11px;
+  }
+  h2{
+    font-size: 28px;
+    padding-bottom: 10px;
+  }
+  h3{
+    font-size: 24px;
+    padding-bottom: 9px;
+  }
+  h4{
+    font-size: 20px;
+    padding-bottom: 7px;
+  }
+  h5{
+    font-size: 18px;
+    padding-bottom: 7px;
+  }
+  h6{
+    font-size: 16px;
+    padding-bottom: 7px;
+  }
+
+a{
+  color: #F5A421;
+  text-decoration: none;
+}
+a:hover{
+  color: #F5A421;
+  text-decoration: none;
+}
+p{
+  margin: 0 0 20px 0;
+}
+
+ol, ul{
+  margin-bottom: 20px;
+}
+  ol li,
+  ul li{
+    margin-left: 30px;
+  }
+
+.cms_content ul{
+  list-style: disc;
+  list-style-position: outside;
+}
+.cms_content ol{
+  list-style: decimal;
+  list-style-position: outside;
+}
+
+blockquote{
+  border-left: 3px solid #d7d7d7;
+  font-style: italic;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+pre{
+  margin-bottom: 10px;
+}
+small{
+  font-size: smaller;
+}
+
+table tr td,
+table tr th{
+  border: 1px solid #d7d7d7;
+  color: #222;
+  padding: 2px 5px;
+  vertical-align: middle;
+}
+  table tr.even{
+    background-color: #ebebeb;
+  }
+
+  table tr.odd{
+    background-color: #f5f5f5;
+  }
+
+form{
+  margin-bottom: 10px;
+}
+
+img.right {
+  float: right;
+  margin-left: 10px;
+}
+  img.left {
+    float: left;
+    margin-right: 10px;
+  }
+  img.leftAlone {
+    float: left;
+    margin-right: 100%;
+  }
+  img.center {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+.bold{
+  font-weight: bold;
+}
+hr, .separator, .line{
+  border: none;
+  border-top: 1px solid #d7d7d7;
+  /*border-bottom: 1px solid #D8D8D8;*/
+  font-size: 0;
+  height: 0;
+  margin: 20px 0;
+}
+input, textarea, select{
+  background: #fff url(img/textbox-bg.png) repeat-x top left;
+  border: 1px solid #888;
+  font-family: 'GeosansLightRegular', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 4px 2px;
+
+}
+input:hover, input.active, input:focus,
+  textarea:hover, textarea.active, textarea:focus,
+  select:hover, select.active, select:focus{
+    border: 1px solid #f5a421;
+  }
+
+button, input[type=submit]{
+  background: #CECECE;
+  border: 1px solid #888888;
+  cursor: pointer;
+  font-family: 'GeosansLightRegular', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  height: 35px;
+  padding: 0 8px;
+  vertical-align: bottom;
+}
+  button:hover,
+  .button:hover,
+  input[type=submit]:hover{
+    color: #FFF;
+    background: #F5A421;
+    border: 1px solid #888;
+    /*border-bottom: 1px solid;
+    margin-top: 1px; */
+    height: 35px;
+    text-decoration: none;
+
+    box-shadow: 0px 0px 2px #DDD;
+    -moz-box-shadow: 0px 0px 2px #DDD;
+    -webkit-box-shadow: 0px 0px 2px #DDD;
+  }
+
+.pagination{
+  text-align: center;
+  padding: 3px 0;
+}
+  .pagination a{
+    background-color: #CECECE;
+    border: 1px solid #888888;
+    cursor: pointer;
+    display: inline-block;
+    margin: 2px;
+    padding: 1px 6px;
+    text-decoration: none;
+  }
+  .pagination a:hover, .pagination a.current{
+    color: #FFF;
+    background: #F5A421;
+    border: 1px solid #888;
+    display: inline-block;
+    text-decoration: none;
+
+    box-shadow: 0px 0px 2px #DDD;
+    -moz-box-shadow: 0px 0px 2px #DDD;
+    -webkit-box-shadow: 0px 0px 2px #DDD;
+  }
+
+.required, .bad, .validation, .red, .error{
+  color: #e10b09;
+}
+.success, .green{
+  color: #009900;
+}
+.clear{
+  clear: both;
+  float: none;
+}
+
+table a{
+  color: #111;
+}
+
+table a:hover{
+  text-decoration: underline;
+}
+
+

@@ -1,0 +1,79 @@
+<script>
+jQuery(function($){
+var mobileWidth = 767;
+  var mobileWidthTemp = 0;
+  // menu toggler
+  $(window).resize(function(){
+     //updateMenu();
+  });
+
+  if( $(window).width() > mobileWidth ){
+    $.supersized({
+
+    	// Functionality
+    	slide_interval : 4000,  // Length between transitions
+    	transition : 1, // 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+    	transition_speed : 1500, // Speed of transition
+      pause_hover: 1,
+    	// Components
+    	slide_links :	'blank',  // Individual links for each slide (Options: false, 'num', 'name', 'blank')
+    	slides : [			// Slideshow Images
+        
+        {% for item in site.data-home %}
+    	  { image : '{{ item.image_home }}',
+          title : '{{ item.title_home }}',
+          thumb : '{{ item.thumb_home }}',
+          
+        },
+        {% endfor %}
+        
+        
+    	]
+    });
+    } else {
+       // mobile
+
+      var htmlSlide = '';
+      
+        {% for item in site.data-home %}
+        htmlSlide += '<li><img class="lazy" data-original="{{ item.image_mobile_home }}"/></li>';
+        {% endfor %}       
+      
+      $('#portfolio').html('<ul>'+htmlSlide+'</ul>');
+      $("img.lazy").lazyload({
+        threshold : 800
+      });
+    }
+
+  $('#slide-thumb-popup').css({opacity: 0});
+  $('#supersized_button #slide-list li').hover(function(){
+  	//api.goTo(3);
+    //alert(api.options.slides[0].thumb);
+    var list = $(this);
+    var index = $(this).prevAll().length;
+    $('#slide-thumb-popup').stop(true, true).css({
+      top: list.offset().top - 91,
+      left: list.offset().left - 53 + 4,
+    }).animate({
+      //height: '75px',
+      opacity: 1,
+    }, {
+      duration: 600,
+      easing: 'easeOutCubic'
+    });
+    $('#slide-thumb-popup img').attr('src', api.options.slides[index].thumb).css({
+      width: '100px',
+      height: '75px',
+    });
+  }, function(){  
+    $('#slide-thumb-popup').stop(true, true).animate({
+      //top: list.offset().top,
+      //height: 0,
+      opacity: 0
+    }, {
+      duration: 400,
+      easing: 'easeInOutQuart'
+    });
+  });
+});
+</script>

@@ -1,0 +1,126 @@
+<script>
+jQuery(function($){
+var mobileWidth = 767;
+  var mobileWidthTemp = 0;
+  // menu toggler
+  $(window).resize(function(){
+     //updateMenu();
+  });
+
+  if( $(window).width() > mobileWidth ){
+    $.supersized({
+
+    	// Functionality
+    	slide_interval : 4000,  // Length between transitions
+    	transition : 1, // 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+    	transition_speed : 1500, // Speed of transition
+      pause_hover: 1,
+    	// Components
+    	slide_links :	'blank',  // Individual links for each slide (Options: false, 'num', 'name', 'blank')
+    	slides : [			// Slideshow Images
+        
+    	  { image : 'assets/Uploads/eastandeast/FVR3542-copy.jpg',
+          title : '',
+          thumb : 'assets/Uploads/eastandeast/resampled/SetWidth100-FVR3542-copy.jpg',
+          
+        },
+        
+    	  { image : 'assets/Uploads/eastandeast/hor-4.jpg',
+          title : '',
+          thumb : 'assets/Uploads/eastandeast/resampled/SetWidth100-hor-4.jpg',
+          
+        },
+        
+    	  { image : 'assets/Uploads/eastandeast/2.jpg',
+          title : '',
+          thumb : 'assets/Uploads/eastandeast/resampled/SetWidth100-2.jpg',
+          
+        },
+        
+    	  { image : 'assets/Uploads/eastandeast/hor-5.jpg',
+          title : '',
+          thumb : 'assets/Uploads/eastandeast/resampled/SetWidth100-hor-5.jpg',
+          
+        },
+        
+    	  { image : 'assets/Uploads/eastandeast/3.jpg',
+          title : '',
+          thumb : 'assets/Uploads/eastandeast/resampled/SetWidth100-3.jpg',
+          
+        },
+        
+    	  { image : 'assets/Uploads/eastandeast/hor-3.jpg',
+          title : '',
+          thumb : 'assets/Uploads/eastandeast/resampled/SetWidth100-hor-3.jpg',
+          
+        },
+        
+    	]
+    });
+    } else {
+       // mobile
+
+      var htmlSlide = '';
+      
+        
+        htmlSlide += '<li><img class="lazy" data-original="assets/Uploads/eastandeast/resampled/SetWidth960-FVR3542-copy.jpg"/></li>';
+        
+      
+        
+        htmlSlide += '<li><img class="lazy" data-original="assets/Uploads/eastandeast/resampled/SetWidth960-hor-4.jpg"/></li>';
+        
+      
+        
+        htmlSlide += '<li><img class="lazy" data-original="assets/Uploads/eastandeast/resampled/SetWidth960-2.jpg"/></li>';
+        
+      
+        
+        htmlSlide += '<li><img class="lazy" data-original="assets/Uploads/eastandeast/resampled/SetWidth960-hor-5.jpg"/></li>';
+        
+      
+        
+        htmlSlide += '<li><img class="lazy" data-original="assets/Uploads/eastandeast/resampled/SetWidth960-3.jpg"/></li>';
+        
+      
+        
+        htmlSlide += '<li><img class="lazy" data-original="assets/Uploads/eastandeast/resampled/SetWidth960-hor-3.jpg"/></li>';
+        
+      
+      $('#portfolio').html('<ul>'+htmlSlide+'</ul>');
+      $("img.lazy").lazyload({
+        threshold : 800
+      });
+    }
+
+  $('#slide-thumb-popup').css({opacity: 0});
+  $('#supersized_button #slide-list li').hover(function(){
+  	//api.goTo(3);
+    //alert(api.options.slides[0].thumb);
+    var list = $(this);
+    var index = $(this).prevAll().length;
+    $('#slide-thumb-popup').stop(true, true).css({
+      top: list.offset().top - 91,
+      left: list.offset().left - 53 + 4,
+    }).animate({
+      //height: '75px',
+      opacity: 1,
+    }, {
+      duration: 600,
+      easing: 'easeOutCubic'
+    });
+    $('#slide-thumb-popup img').attr('src', api.options.slides[index].thumb).css({
+      width: '100px',
+      height: '75px',
+    });
+  }, function(){  
+    $('#slide-thumb-popup').stop(true, true).animate({
+      //top: list.offset().top,
+      //height: 0,
+      opacity: 0
+    }, {
+      duration: 400,
+      easing: 'easeInOutQuart'
+    });
+  });
+});
+</script>

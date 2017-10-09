@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <base href="{{ site.siteurl }}" />
+    <title>{{ page.title }} - {{ site.judulweb }} </title>
+    {% include metadata.html %}
+    {% include favicon.html %}
+    {% include css.html %}
+    {% include js.html %}
+    {% include script-right-click.html %}
+    {% include css-portfolio.html %}
+    {% include css-fancybox.html %}
+  </head>
+  <body>
+<div id="portfolio">
+  <div id="supersized_button">
+    <!--Thumbnail Navigation-->
+    <div id="prevthumb"></div>
+    <div id="nextthumb"></div>
+    <!--Arrow Navigation-->
+    <a id="prevslide" class="load-item"></a>
+    <a id="nextslide" class="load-item"></a>
+    <!--Time Bar-->
+    <div id="progress-back" class="load-item">
+      <div id="progress-bar"></div>
+    </div>
+    <!--Navigation-->
+    <ul id="slide-list"></ul>
+    <div id="slide-thumb-popup">
+      <img src="" />
+      <div class="thumb-arrow"></div>
+    </div>
+  </div>
+  <script src="themes/default/js/jquery.lazyload.min.js"></script>
+
+  <div id="slide_content_bg"></div>
+  <div id="slide_content" class="cms_content">
+    <h1>{{ page.title-h1 }}</h1>
+
+    <p>{{ page.keterangan }}</p>
+  </div>
+</div>
+
+{% include picture-bermain.html %}
+
+  <div id="footer">
+      <div id="inside">
+        {% include logo.html %}
+        {% include menu.html %}
+        {% include copyright.html %} 
+      </div>
+    </div>
+  <!-- {% include analytics.html %} -->
+</body>
+</html>
+{% include js-portfolio.html %}
