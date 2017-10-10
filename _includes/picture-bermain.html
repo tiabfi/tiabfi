@@ -22,7 +22,7 @@ var mobileWidth = 767;
         {% for item in site.galeri-bermain %}
     	  { image : '{{ item.image_bermain }}',
           title : '{{ item.title_bermain }}',
-          thumb : '{{ item.thumb_bermain }}',
+          thumb : '{{ item.image_bermain }}',
           
         },
         {% endfor %}
@@ -36,7 +36,7 @@ var mobileWidth = 767;
       var htmlSlide = '';
       
         {% for item in site.galeri-bermain %}
-        htmlSlide += '<li><img class="lazy" data-original="{{ item.image_mobile_bermain }}"/></li>';
+        htmlSlide += '<li><img class="lazy" data-original="{{ item.image_bermain }}"/></li>';
         {% endfor %}       
       
       $('#portfolio').html('<ul>'+htmlSlide+'</ul>');

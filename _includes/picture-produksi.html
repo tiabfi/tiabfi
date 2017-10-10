@@ -22,7 +22,7 @@ var mobileWidth = 767;
         {% for item in site.galeri-produksi %}
     	  { image : '{{ item.image_produksi }}',
           title : '{{ item.title_produksi }}',
-          thumb : '{{ item.thumb_produksi }}',
+          thumb : '{{ item.image_produksi }}',
           
         },
         {% endfor %}
@@ -36,7 +36,7 @@ var mobileWidth = 767;
       var htmlSlide = '';
       
         {% for item in site.galeri-produksi %}
-        htmlSlide += '<li><img class="lazy" data-original="{{ item.image_mobile_produksi }}"/></li>';
+        htmlSlide += '<li><img class="lazy" data-original="{{ item.image_produksi }}"/></li>';
         {% endfor %}       
       
       $('#portfolio').html('<ul>'+htmlSlide+'</ul>');

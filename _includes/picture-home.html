@@ -22,7 +22,7 @@ var mobileWidth = 767;
         {% for item in site.data-home %}
     	  { image : '{{ item.image_home }}',
           title : '{{ item.title_home }}',
-          thumb : '{{ item.thumb_home }}',
+          thumb : '{{ item.image_home }}',
           
         },
         {% endfor %}
@@ -36,7 +36,7 @@ var mobileWidth = 767;
       var htmlSlide = '';
       
         {% for item in site.data-home %}
-        htmlSlide += '<li><img class="lazy" data-original="{{ item.image_mobile_home }}"/></li>';
+        htmlSlide += '<li><img class="lazy" data-original="{{ item.image_home }}"/></li>';
         {% endfor %}       
       
       $('#portfolio').html('<ul>'+htmlSlide+'</ul>');

@@ -8,19 +8,15 @@
     {% include css.html %}
     {% include js.html %}
     {% include script-right-click.html %}
-  <!-- <link rel="stylesheet" type="text/css" href="themes/default/css/camera/css/camera.css" /> -->
-  <!-- <link rel="alternate" type="application/rss+xml" title="Info &amp; News RSS" href="/home/rss" /> -->
+    {% include css-camera.html %}
+    {% include rss.html %}
   </head>
   <body>
       <div id="full">
         <div id="content_wrapper">
           <div id="page">
             <div class="cms_content">
-
-              <!-- <div class="breadcrumb"><a href="/company/about-us/">COMPANY</a> &raquo; ABOUT US</div> -->
-
               {{ content }}
-              
               <p> </p>
               <p> </p>
               <div class="clear"></div>
@@ -28,8 +24,6 @@
           </div>
         </div>
       </div>
-
-    <!-- {% include picture.html %} -->
     <div id="footer">
       <div id="inside">
         {% include logo.html %}
@@ -37,7 +31,7 @@
         {% include copyright.html %} 
       </div>
     </div>
-  <!-- {% include analytics.html %} -->
+  {% include analytics.html %}
   </body>
 </html>
 {% include script-mobile-menu.html %}

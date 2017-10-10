@@ -22,7 +22,7 @@ var mobileWidth = 767;
         {% for item in site.galeri-kontruksi %}
     	  { image : '{{ item.image_kontruksi }}',
           title : '{{ item.title_kontruksi }}',
-          thumb : '{{ item.thumb_kontruksi }}',
+          thumb : '{{ item.image_kontruksi }}',
           
         },
         {% endfor %}
@@ -36,7 +36,7 @@ var mobileWidth = 767;
       var htmlSlide = '';
       
         {% for item in site.galeri-kontruksi %}
-        htmlSlide += '<li><img class="lazy" data-original="{{ item.image_mobile_kontruksi }}"/></li>';
+        htmlSlide += '<li><img class="lazy" data-original="{{ item.image_kontruksi }}"/></li>';
         {% endfor %}       
       
       $('#portfolio').html('<ul>'+htmlSlide+'</ul>');

@@ -19,10 +19,10 @@ var mobileWidth = 767;
     	slide_links :	'blank',  // Individual links for each slide (Options: false, 'num', 'name', 'blank')
     	slides : [			// Slideshow Images
         
-        {% for item in site.galeri-ujicoba %}
-    	  { image : '{{ item.image_ujicoba }}',
-          title : '{{ item.title_ujicoba }}',
-          thumb : '{{ item.image_ujicoba }}',
+        {% for item in site.permainan-ember-tumpah %}
+    	  { image : '{{ item.image_permainan-ember-tumpah }}',
+          title : '{{ item.title_permainan-ember-tumpah }}',
+          thumb : '{{ item.image_permainan-ember-tumpah }}',
           
         },
         {% endfor %}
@@ -35,8 +35,8 @@ var mobileWidth = 767;
 
       var htmlSlide = '';
       
-        {% for item in site.galeri-ujicoba %}
-        htmlSlide += '<li><img class="lazy" data-original="{{ item.image_ujicoba }}"/></li>';
+        {% for item in site.permainan-ember-tumpah %}
+        htmlSlide += '<li><img class="lazy" data-original="{{ item.image_permainan-ember-tumpah }}"/></li>';
         {% endfor %}       
       
       $('#portfolio').html('<ul>'+htmlSlide+'</ul>');
