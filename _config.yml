@@ -1,6 +1,7 @@
-siteurl: https://timurabadifiber.com/
+siteurl: 
 favicon: /favicon.png
 logo: themes/default/css/img/logo.png
+logo-hubungi-kami: /ta.png
 nama: Timur Abadi Fiber
 moto: Indah dan Profesional
 judulweb: Timur Abadi Fiber - Waterslide Specialist | Kontraktor Waterpark | Kontraktor Kolam Ombak | Produksi Fiberglass Waterpark
@@ -16,7 +17,21 @@ permalink: /404.html
 collections:
   data-home:
   data-publikasi:
+  galeri-pabrik:
   galeri-produksi:
   galeri-kontruksi:
   galeri-bermain:
   galeri-ujicoba:
+  permainan-dry-pool:
+  permainan-tirai:
+  permainan-family-slide:
+  permainan-ember-tumpah:
+  permainan-slide-75:
+  permainan-slide-100:
+  permainan-slide-14:
+  permainan-racing-slide:
+  permainan-big-jump:
+  permainan-boomerang:
+  permainan-super-bowel:
+  permainan-octopus:
+  permainan-giant-riser:

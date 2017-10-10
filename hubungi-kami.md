@@ -4,7 +4,7 @@ title: Hubungi Kami
 ---
 <h1 class="title" style="display: none;">Contact Us</h1>
 <p>HUBUNGI KAMI SEKARANG UNTUK MENDAPATKAN PELAYANAN TERBAIK KAMI !!!</p>
-<img src="{{ site.logo }}"/>
+<img src="{{ site.logo-hubungi-kami }}" width="200" height="150" alt="{{ site.nama }}" title="{{ site.nama }}"/>
 <p>{{ site.nama }} <br> {{ site.moto }}</p>
 <p>{{ site.alamat-jalan }},<br/>{{ site.alamat-kota }}<br/>
 Telephone : <a href="tel:{{ site.telepon }}">{{ site.telepon }}</a><br/>
