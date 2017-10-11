@@ -1,3 +1,3 @@
 ---
-image_permainan-ember-tumpah: picture/pic-home-2.jpg
+image_permainan-ember-tumpah: picture/ember-tumpah-6.jpg
 ---

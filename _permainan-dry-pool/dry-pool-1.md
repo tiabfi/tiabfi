@@ -1,3 +1,3 @@
 ---
-image_permainan-dry-pool: picture/pic-home-1.jpg
+image_permainan-dry-pool: picture/dry-pool-1.jpg
 ---

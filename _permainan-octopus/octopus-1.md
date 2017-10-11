@@ -1,3 +1,3 @@
 ---
-image_permainan-octopus: picture/pic-home-2.jpg
+image_permainan-octopus: picture/octopus-1.jpg
 ---
