@@ -1,3 +1,3 @@
 ---
-image_permainan-tirai: picture/pic-home-1.jpg
+image_permainan-tirai: picture/tirai-1.jpg
 ---
