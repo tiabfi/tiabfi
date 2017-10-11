@@ -2,16 +2,17 @@ siteurl:
 favicon: /favicon.png
 logo: themes/default/css/img/logo.png
 logo-hubungi-kami: /ta.png
-nama: Timur Abadi Fiber
-moto: Indah dan Profesional
-judulweb: Timur Abadi Fiber - Waterslide Specialist | Kontraktor Waterpark | Kontraktor Kolam Ombak | Produksi Fiberglass Waterpark
-alamat-jalan: Jalan Gleduk 001
-alamat-kota: Gedangsewu, Tulungagung, Jawa Timur, INDONESIA
-telepon: 082257767755
+nama: CV. Timur Abadi Fiber
+moto: Kontraktor Waterpark dan Fiberglass
+judulweb: CV. Timur Abadi Fiber - Waterslide Specialist | Kontraktor Waterpark | Kontraktor Kolam Ombak | Produksi Fiberglass Waterpark
+alamat-jalan: Tulungagung - Jawa Timur
+alamat-kota: Jababeka - Jakarta
+telepon: 0818303744
+fax: (0355)336061
 sms: 082257767755
 whatsapp: 082257767755
 whatsapp-api: https://api.whatsapp.com/send?text=TANYA%20DARI%20WEBSITE%20(Nama)%20(Alamat)%20&phone=6282257767755
-email: info@timurabadifiber.com
+email: timurabadi@yahoo.com
 permalink: pretty
 permalink: /404.html
 collections:
