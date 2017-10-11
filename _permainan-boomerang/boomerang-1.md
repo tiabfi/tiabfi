@@ -1,3 +1,3 @@
 ---
-image_permainan-boomerang: picture/pic-home-2.jpg
+image_permainan-boomerang: picture/boomerang-1.jpg
 ---

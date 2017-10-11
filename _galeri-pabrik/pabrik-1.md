@@ -1,3 +1,3 @@
 ---
-image_pabrik: picture/pic-produksi-1.jpg
+image_pabrik: picture/pabrik-fiber-1.jpg
 ---

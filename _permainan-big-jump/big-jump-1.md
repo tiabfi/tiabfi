@@ -1,3 +1,3 @@
 ---
-image_permainan-big-jump: picture/pic-home-1.jpg
+image_permainan-big-jump: picture/big-jump-1.jpg
 ---
