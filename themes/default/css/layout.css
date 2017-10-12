@@ -92,7 +92,7 @@
 #title_logo{
   display: table-cell;
   line-height: 1.1;
-  font-size: 12px;
+  font-size: 13px;
   text-transform: uppercase;
   text-align: left;
 }
@@ -123,7 +123,7 @@
 #menu li a{
   color: #fff;
   text-transform: uppercase;
-  font-size: 11px;
+  font-size: 13px;
 }
 #menu li a:hover,
 #menu li.current a,
@@ -166,7 +166,7 @@
   #menu li .selection .sub_menu a{
     color: #FFF;
     display: inline-block;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 1.5;
     padding: 0px 15px;
     text-align: right;
